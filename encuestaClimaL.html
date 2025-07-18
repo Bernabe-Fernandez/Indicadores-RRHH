@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/custom/normalize.css" />
+    <link rel="stylesheet" href="css/custom/style.css" />
+    <link rel="stylesheet" href="css/custom/cuestionarios.css" />
+    <title>Encuesta de Clima Laboral</title>
+  </head>
+  <body>
+    <main>
+      <section id="mensajeForm" class="mensaje-encuesta" style="display: none">
+        <h3>¡Muchas Gracias!</h3>
+        <p>
+          Has completado el cuestionario de clima laboral. Su participación es clave para mejorar nuestro entorno de trabajo. Valoramos sus comentarios y trabajaremos en las mejoras necesarias.
+        </p>
+        <div class="contenedor-img">
+          <img src="img/icono.webp" alt="mrg">
+        </div>
+      </section>
+      <section class="head-encuesta" id="head-encuesta">
+        <h1>Encuesta de Clima Laboral.</h1>
+        <p class="texto-encuesta">
+          Considera las condiciones laborales de los últimos dos meses y responde con sinceridad, recuerda que esta encuesta es con la finalidad de mejorar el ambiente de trabajo.
+        </p>
+        <p class="texto-encuesta">Selecciona la opción que se apegue más a tu trabajo cotidiano.</p>
+      </section>
+      <section class="body-encuesta" id="body-encuesta">
+        <form class="formulario" id="fomularioClima">
+          <div class="cuestions">
+            <label for="relacionJ"
+              >¿Cómo consideras qué es la relación con tu jefe inmediato?*</label
+            >
+            <select name="relacionJ" id="relacionJ">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Buena</option>
+              <option value="3">Regular</option>
+              <option value="2">Indiferente</option>
+              <option value="1">Mala</option>
+            </select>
+          </div>
+          <div class="cuestions">
+            <label for="relacionD"
+              >¿Cómo consideras la relación con los compañeros de tu departamento al que perteneces?*</label
+            >
+            <select name="relacionD" id="relacionD">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Buena</option>
+              <option value="3">Regular</option>
+              <option value="2">Indiferente</option>
+              <option value="1">Mala</option>
+            </select>
+          </div>
+          <div class="cuestions">
+            <label for="relacionG"
+              >¿Cómo consideras la relación con tus compañeros de otras áreas (General)?*</label
+            >
+            <select name="relacionG" id="relacionG">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Buena</option>
+              <option value="3">Regular</option>
+              <option value="2">Indiferente</option>
+              <option value="1">Mala</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="apoyo"
+              >Cuando se te presenta un problema, ¿Sientes el apoyo o ayuda?*</label
+            >
+            <select name="apoyo" id="apoyo">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de las veces</option>
+              <option value="2">Sólo en ocasiones</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="apoyar"
+              >Cuando alguien tiene algún problema, ¿Estás dispuesto a darle apoyo?*</label
+            >
+            <select name="apoyar" id="apoyar">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">Algunas Veces</option>
+              <option value="2">Depende a quién</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+
+          <div class="cuestions">
+            <label for="gustoC"
+              >¿Qué es lo qué más te gusta de la relación con tus compañeros/as?*</label
+            >
+            <input type="text" name="gustoC" id="gustoC" placeholder="Tu respuesta" />
+          </div>
+
+          <div class="cuestions">
+            <label for="disgustoC"
+              >¿Qué es lo qué menos te gusta de la relación con tus compañeros/as?*</label
+            >
+            <input type="text" name="disgustoC" id="disgustoC" placeholder="Tu respuesta" />
+          </div>
+
+          <div class="cuestions">
+            <label for="comodo"
+              >¿Te sientes cómodo/a trabajando en Morgall?*</label
+            >
+            <select name="comodo" id="comodo">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="2">Si</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="esfuerzoF"
+              >¿Mi trabajo me exige hacer mucho esfuerzo físico?*</label
+            >
+            <select name="esfuerzoF" id="esfuerzoF">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Casi Nunca</option>
+              <option value="1">Nunca</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="accidente"
+              >¿Me preocupa sufrir un accidente en mi trabajo?*</label
+            >
+            <select name="accidente" id="accidente">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Casi Nunca</option>
+              <option value="1">Nunca</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="peligro"
+              >¿Considero que las actividades que realizo son peligrosas?*</label
+            >
+            <select name="peligro" id="peligro">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Solo en ocasiones</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="tAdicional"
+              >¿Por la cantidad de trabajo que tengo debo quedarme tiempo adicional a mi turno?*</label
+            >
+            <select name="tAdicional" id="tAdicional">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Solo en ocasiones</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="Tsinparar"
+              >¿Por la cantidad de trabajo que tengo debo trabajar sin parar?*</label
+            >
+            <select name="Tsinparar" id="Tsinparar">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Solo en ocasiones</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="Tacelerado"
+              >¿Considero que es necesario mantener un ritmo de trabajo acelerado?*</label
+            >
+            <select name="Tacelerado" id="Tacelerado">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Solo en ocasiones</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="concentracion"
+              >¿Mi trabajo exige que esté muy concentrado?*</label
+            >
+            <select name="concentracion" id="concentracion">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Solo en ocasiones</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="memoriceInfo"
+              >¿Mi trabajo requiere que memorice mucha información?*</label
+            >
+            <select name="memoriceInfo" id="memoriceInfo">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Solo en ocasiones</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="variosAsun"
+              >¿Mi trabajo exige que atienda varios asuntos al mismo tiempo?*</label
+            >
+            <select name="variosAsun" id="variosAsun">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">Si</option>
+              <option value="3">La mayoría de veces</option>
+              <option value="2">Solo en ocasiones</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="acosoL"
+              >¿Ha presenciado o sufrido alguna vez, dentro del trabajo alguna amenaza o acoso de cualquier índole?*</label
+            >
+            <select name="acosoL" id="acosoL">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="2">Si</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions" style="display: none" id="acosoEsp">
+            <label for="acosoEsp">
+              Especifica*
+            </label>
+            <input type="text" name="acosoEsp" id="acosoEsp" placeholder="Especifica">
+          </div>
+
+          <div class="cuestions"> 
+            <label for="sucesoLaboral">
+              ¿Has tenido sueños de carácter recurrente sobre algún suceso o acontecimiento laboral?*
+            </label>
+            <select name="sucesoLaboral" id="sucesoLaboral">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="2">Si</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+
+          <div class="cuestions"  style="display:none;" id="sucesoL">
+            <label for="sucesoLabo">
+              Especifica*
+            </label>
+            <input type="text" name="sucesoLabo" id="sucesoLabo" placeholder="Especifica">
+          </div>
+
+          <div class="cuestions">
+            <label for="climaL"
+              >Del 1 al 10, ¿Con cuánto calificas el clima laboral de la empresa?*</label
+            >
+            <div class="contenedorNumeros" id="contenedorNumeros"></div>
+          </div>
+
+          <div class="cuestions">
+            <label for="mejoras"
+              >Si estuviera en tus manos, ¿Qué aspectos mejorarías para mantener un clima laboral positivo?*</label
+            >
+            <input type="text" name="mejoras" id="mejoras" placeholder="Tu respuesta" />
+          </div>
+
+          <div class="cuestions">
+            <input
+              type="submit"
+              class="boton-form-naranja"
+              value="Enviar"
+            />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/controllers/encuestaClima.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

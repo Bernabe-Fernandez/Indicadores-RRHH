@@ -1,0 +1,45 @@
+.contenedor-form .contenedor-folio{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contenedor-folio .inputs-folio,
+.contenedor-folio .inputs-cliente{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-folio label{
+    text-transform: capitalize;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.inputs-folio input,
+.inputs-cliente input{   
+    padding:0.5rem;
+    margin: 1rem 0;
+    border: 1px solid var(--black-color);
+    border-radius: 0.5rem;
+}
+
+
+.inputs-folio input{
+    width: 60%;
+}
+
+.inputs-cliente input{
+    width: 70%;
+}
+
+.inputs-folio button{
+    padding: 1rem;
+    border: 1px solid var(--gray-color);
+    border-radius: 10px;
+}

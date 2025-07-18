@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- mandamos a llamar un API de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- mandamos a llamar la hoja de estilos y la hoja de normalize -->
+    <link rel="stylesheet" href="css/custom/style.css" />
+    <link rel="stylesheet" href="css/custom/menu.css" />
+    <link rel="stylesheet" href="css/custom/normalize.css" />
+    <link rel="stylesheet" href="css/custom/index.css" />
+    <title>Omnibandas</title>
+    <meta
+      name="description"
+      content="Descubre en Morgall, líder en la fabricación de bandas y transportadores industriales en el país, la solución perfecta para mejorar la calidad de tu producción. Con años de experiencia, ofrecemos servicios personalizados, técnicos de calidad y precios adaptables. Cotiza con nosotros y lleva tu operación industrial al siguiente nivel."
+    />
+    <link rel="icon" href="img/icono.webp" type="image/x-icon" />
+    <!-- llamada a jquery -->
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <div class="menu">
+      <ion-icon name="menu-outline"></ion-icon>
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+      <div>
+        <div class="nombre-pagina">
+          <img src="img/icono.webp" alt="mrg" id="cloud" />
+          <span>RRHH MRG</span>
+        </div>
+      </div>
+      <nav class="navegacion">
+        <ul>
+          <li>
+            <a id="inbox" href="index.php">
+              <ion-icon name="speedometer-outline"></ion-icon>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="empleadosview.php">
+              <ion-icon name="person-outline"></ion-icon>
+              <span>Empleados</span>
+            </a>
+          </li>
+          <li>
+            <a href="rotacion.php">
+              <ion-icon name="reload-outline"></ion-icon>
+              <span>Rotacion</span>
+            </a>
+          </li>
+          <li>
+            <a href="ausentismoView.php">
+              <ion-icon name="close-circle-outline"></ion-icon>
+              <span>Ausentismos</span>
+            </a>
+          </li>
+          <li>
+            <a href="accidentesView.php">
+              <ion-icon name="medkit-outline"></ion-icon>
+              <span>Accidentes</span>
+            </a>
+          </li>
+          <li>
+            <a href="eDesempeno.php">
+              <ion-icon name="clipboard-outline"></ion-icon>
+              <span>E. de Desempeño</span>
+            </a>
+          </li>
+          <li>
+            <a href="capacitacionView.php">
+              <ion-icon name="easel-outline"></ion-icon>
+              <span>Capacitacion</span>
+            </a>
+          </li>
+          <li>
+            <a href="desarrolloView.php">
+              <ion-icon name="bar-chart-outline"></ion-icon>
+              <span>Desarrollo Org.</span>
+            </a>
+          </li>
+          <li>
+            <a href="climaView.php">
+              <ion-icon name="partly-sunny-outline"></ion-icon>
+              <span>Clima Laboral</span>
+            </a>
+          </li>
+          <li>
+            <a href="eventosView.php">              
+              <ion-icon name="balloon-outline"></ion-icon>
+              <span>Eventos</span>
+            </a>
+          </li>
+          <li>
+            <a href="reporteCreate.php">              
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              <span>Asistencia</span>
+            </a>
+          </li>
+          <li>
+            <a href="juntasView.php">
+              <ion-icon name="clipboard-outline"></ion-icon>
+              <span>Juntas</span>
+            </a>
+          </li>
+            <li>
+              <a href="areasView.php">              
+                <ion-icon name="book-outline"></ion-icon>
+                <span>Areas</span>
+              </a>
+            </li>
+            <li>
+              <a href="puestosView.php">              
+                <ion-icon name="people-outline"></ion-icon>
+                <span>Puestos</span>
+              </a>
+            </li>
+            <li>
+              <a href="vacantesView.php">              
+                <ion-icon name="add-circle-outline"></ion-icon>
+                <span>Vacantes</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="logout">
+                <ion-icon name="log-out-outline"></ion-icon>
+                <span>Cerrar Sesion</span>
+              </a>
+            </li>
+        </ul>
+      </nav>
+
+      <div>
+        <div class="linea"></div>
+        </div>
+
+        <div class="usuario">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <div class="info-usuario">
+            <div class="usuario-data">
+              <span class="depart">Recursos Humanos</span>
+              <span class="nombre" id="nombreUsuario"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

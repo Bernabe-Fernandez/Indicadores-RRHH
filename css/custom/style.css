@@ -1,0 +1,437 @@
+:root {
+  --first-color: rgb(47, 85, 161);
+  --first-alpha-color: rgba(47, 85, 161, 0.5);
+  --second-color: #000;
+  --second-alpha-color: rgba(0, 0, 0, 0.75);
+  --white-color: #fff;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --link-color: #f35e2c;
+  --title-color: #333;
+  --text-color: #222;
+  --blue: #073ebd;
+  --red: #bd0707;
+  --green: #71b100;
+  --font: "Noto Sans", sans-serif;
+  --max-width: 120rem;
+}
+
+/***** Espacio de Reseteo *****/
+/*** Codigo para el box model***/
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 15px;
+  scroll-behavior: smooth;  
+  overflow-x: hidden; /*Oculta el scroll cuando se desvorda un contenido */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; /*Oculta el scroll cuando se desvorda un contenido */
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.8;
+  height: 100vh;
+  width: 100%;
+  /* background-color: var(--black-color); */
+}
+
+ul, li{
+  padding: 0;
+}
+
+/***Configuramos los titulos ***/
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.hidden{
+  display: none;
+}
+
+.view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+/** darle espacio al contenido ***/
+.contenido {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.5s ease;
+}
+
+.contenido h1{
+  font-weight: bold;
+}
+
+.text-center{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+
+/***** botones *****/
+.contenedor-botones{
+  display:flex;
+  /* flex-direction: column; */
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.boton{
+  padding: 0.5rem;
+  margin: 3px 0;
+  border-radius: 0.2rem;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.boton.boton-edit{
+  background-color: var(--gray-dark-color);
+}
+
+.boton.boton-baja{
+  background-color: var(--red);
+}
+
+.boton.boton-ver{
+  background-color: var(--green);
+}
+
+.boton.boton-edit:hover{
+  color: var(--black-color);
+  border: 1px solid var(--gray-color);
+}
+.boton.boton-baja:hover{
+  color: var(--black-color);
+  border: 1px solid var(--red);
+}
+
+.boton.boton-ver:hover{
+  color: var(--black-color);
+  border: 1px solid var(--green);
+}
+
+/******* boton de agregar *******/
+.contenedor-agregar{
+  width: 65%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1.5rem;
+}
+
+.contenedor-botones{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1.5rem;
+}
+.boton-gen{
+  background-color: var(--link-color);
+}
+
+.boton-new{
+  background-color: var(--green);
+}
+
+
+.boton-gen:hover,
+.boton-new:hover{
+  color: var(--black-color);
+  border: 1px solid var(--black-color);
+}
+
+.btn-gral{
+  padding: 0.5rem;
+  margin: 0 5px;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+.contenedor-agregar .boton-agregar{
+  background-color: var(--green);
+}
+
+.contenedor-agregar .boton-ver{
+  background-color: var(--link-color);
+}
+.boton-agregar:hover{
+  color: var(--black-color);
+  border: 1px solid var(--green);
+}
+
+
+.boton-ver:hover{
+  color: var(--black-color);
+  border: 1px solid var(--link-color);
+}
+
+/**** boton formulario*****/
+.boton-form-naranja{
+  padding: 0.7rem;
+  background-color: var(--first-color);
+  border: 1px solid var(--first-alpha-color);
+  border-radius: 5px;
+  text-align: center;
+  width: 50%;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.boton-form-naranja:hover{
+  border: 1px solid var(--black-color);
+  color: var(--black-color);
+}
+
+/**** formulario *****/
+.contenedor-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.contenedor-form .contenido-tabla {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contenedor-form .contenedor-asistentes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contenedor-asistentes .contenedor-asignar{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contenedor-form textarea{
+  padding: 0.5rem;
+}
+
+.contenedor-form table {
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid var(--black-color);
+  width: 100%;
+}
+
+.contenedor-form table .hidden-column{
+  display: none
+}
+
+
+.contenedor-form table thead th {
+  width: 10rem;
+  border: 1px solid var(--black-color);
+}
+
+.contenedor-form table thead .large {
+  width: 15rem;
+}
+
+select.selectTabla {
+  font-size: 10px;
+  width: 70%;
+}
+
+.contenedor-form table tbody tr td {
+  border: 1px solid var(--black-color);
+  max-width: 9rem; /* Establece la altura máxima de la celda */
+  max-height: 50px;
+  overflow-y: auto; /* Permite el desbordamiento vertical */
+  word-wrap: break-word; /* Permite que el texto se ajuste a la altura de la celda */
+  white-space: normal; /* Permite que el texto envuelva dentro de la celda */
+}
+
+.contenido-boton .boton-icono {
+  width: 2rem;
+  height: 2rem;
+}
+
+.contenido-boton {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contenido-boton .mensajeInfo {
+  visibility: hidden;
+  width: 130px;
+  font-size: 10px;
+  color: var(--black-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position the tooltip above the text */
+  left: 60%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.contenido-boton:hover .mensajeInfo {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contenedor-form .formulario{
+  width: 70%;
+  height: 100%;
+  padding: 2rem 10rem;
+  border-radius: 10px;
+  border: 1px solid var(--gray-color);
+}
+
+.formulario label{
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  display: block;
+}
+
+.formulario input:not([type="submit"]),
+.formulario select{
+  width: 100%;
+  margin: 0;
+  padding:0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--black-color);
+  border-radius: 0.5rem;
+}
+
+.formulario textarea{
+  width: 100%;
+  height: 8rem;
+  padding: 10px;
+}
+
+.formulario .contenedor-input{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contenedor-boton{
+  width: 100%;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.contenedor-tabla{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.acciones-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+
+/**** tabla de asistencia *****/
+.tablaAsistencia {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tablaAsistencia th,
+.tablaAsistencia td {
+    word-wrap: break-word;
+    border: 1px solid var(--black-color);
+    padding: 5px;
+}
+
+.tablaAsistencia th{
+  background-color: var(--gray-color);
+}
+
+.tablaAsistencia .titulo-tabla {
+  font-size: 25px;
+}
+
+.tablaAsistencia .titulos-esp {
+  font-size: 10px;
+}
+
+
+.titulos-esp th{
+  padding: 3px;
+}
+
+
+.tablaAsistencia .contenido-esp {
+  font-size: 9px;
+}
+
+
+/***** footer ****/
+.footer{
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}

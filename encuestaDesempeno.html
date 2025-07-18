@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/custom/normalize.css" />
+    <link rel="stylesheet" href="css/custom/style.css" />
+    <link rel="stylesheet" href="css/custom/cuestionarios.css" />
+    <title>Autoevaluación de Desempeño</title>
+  </head>
+  <body>
+    <main>
+      <section id="mensajeForm" class="mensaje-encuesta" style="display: none">
+        <h3>¡Muchas Gracias!</h3>
+        <p>
+          Has completado tu autoevaluación de desempeño satisfactoriamente.
+          <br />
+          Tu participación y sinceridad son muy valiosas para nosotros y nos
+          ayudarán a mejorar continuamente.
+        </p>
+        <div class="contenedor-img">
+          <img src="img/icono.webp" alt="mrg" />
+        </div>
+      </section>
+      <section class="head-encuesta" id="head-encuesta">
+        <h1>Autoevaluación de Desempeño.</h1>
+        <p>
+          Selecciona tu nombre de la lista, verifica que tus datos personales
+          sean correctos, posteriormente procede a reponder las preguntas
+          abiertas, una vez contestadas inicia con tu autoevaluación.
+        </p>
+        <br />
+        <p>
+          Toma en cuenta el logro de los objetivos alcanzados y el nivel de
+          ejecución de los indicadores de este formato que van acorde a tus
+          actividades de trabajo cotidiano.
+        </p>
+        <br />
+        <p>
+          - Lee detenidamente cada indicador.
+          <br />
+          - Trata de ser lo más objetivo en tus respuestas.
+          <br />
+          - Califica cada indicador con la opción que más se asemeje a tu
+          desempeño dentro de las responsabilidades de tu puesto.
+        </p>
+
+        <p><strong>Escala de evaluación</strong></p>
+        <p>
+          La evaluación se realizará en una escala del 1 al 4, donde: <br>
+          <p>1: Representa el nivel más bajo de desempeño.</p>
+          <p>2: Indica un desempeño básico con áreas de mejora.</p>
+          <p>3: Muestra un buen desempeño en la mayoría de los aspectos.</p>
+          <p>4: Refleja un desempeño sobresaliente, cumpliendo con excelencia los objetivos y responsabilidades del puesto.</p>
+        </p>
+      </section>
+      <section class="body-encuesta" id="body-encuesta">
+        <form class="formulario" id="fomularioAutoDesempeno">
+          <div class="cuestions">
+            <label for="empleadoAu"> Nombre Completo* </label>
+            <select name="empleadoAu" id="empleadoAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+            </select>
+          </div>
+          <div class="cuestions">
+            <label for="areaAu">Area*</label>
+            <input
+              type="text"
+              name="areaAu"
+              id="areaAu"
+              placeholder="Área"
+              disabled />
+          </div>
+
+          <div class="cuestions">
+            <label for="puestoAu">Puesto*</label>
+            <input
+              type="text"
+              name="puestoAu"
+              id="puestoAu"
+              placeholder="Puesto"
+              disabled />
+          </div>
+
+          <div class="cuestions">
+            <label for="misionAu"
+              >¿Con tus palabras, cuál es la misión de Morgall?*</label
+            >
+            <input
+              type="text"
+              name="misionAu"
+              id="misionAu"
+              placeholder="Misión"/>
+          </div>
+
+          <div class="cuestions">
+            <label for="visionAu"
+              >¿Con tus palabras, cuál es la visión de Morgall?*</label
+            >
+            <input
+              type="text"
+              name="visionAu"
+              id="visionAu"
+              placeholder="Visión"/>
+          </div>
+
+          <div class="cuestions">
+            <label for="objetivosAu"
+              >¿Cuáles son los objetivos de tu puesto?*</label
+            >
+            <input
+              type="text"
+              name="objetivosAu"
+              id="objetivosAu"
+              placeholder="Objetivos"/>
+          </div>
+
+          <div class="cuestions">
+            <label for="supervisionAu"
+              >¿Necesitas supervisión frecuente para realizar tus
+              labores?*</label
+            >
+            <select name="supervisionAu" id="supervisionAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="independienteAu"
+              >¿Consideras que puedes tomar decisiones por sí sólo?*</label
+            >
+            <select name="independienteAu" id="independienteAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="ayudaAu"
+              >¿Realizas tu trabajo sin necesidad de ayuda de otra
+              persona?*</label
+            >
+            <select name="ayudaAu" id="ayudaAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="aportacionAu"
+              >¿Consideras que tus aportaciones son esenciales para el
+              desarrollo de la empresa?*</label
+            >
+            <select name="aportacionAu" id="aportacionAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="innovadorAu"
+              >¿Eres innovador a la hora de toma de decisiones?*</label
+            >
+            <select name="innovadorAu" id="innovadorAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="influenciaAu"
+              >¿Puedo ver con claridad cómo mi trabajo influye en el éxito
+              general de la compañía?*</label
+            >
+            <select name="influenciaAu" id="influenciaAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="lograrAu"
+              >¿Sé lo que se espera de mí para lograr los objetivos y
+              resultados?*</label
+            >
+            <select name="lograrAu" id="lograrAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="imprevistosAu"
+              >¿Resuelves los imprevistos de tu trabajo y mejoras los
+              procedimientos cuando se requiere?*</label
+            >
+            <select name="imprevistosAu" id="imprevistosAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="comunicacionAu"
+              >¿Estableces y mantienes comunicación con compañeros, superiores,
+              clientes, etc. propiciando un ambiente de cordialidad y
+              respeto?*</label
+            >
+            <select name="comunicacionAu" id="comunicacionAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="cooperasAu"
+              >¿Cooperas con los compañeros en las labores complejas?*</label
+            >
+            <select name="cooperasAu" id="cooperasAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="compromisoAu"
+              >¿Qué tanto compromiso consideras que tienes con tus
+              labores?*</label
+            >
+            <select name="compromisoAu" id="compromisoAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="horarioAu"
+              >¿Cumples exactamente con el horario de trabajo?*</label
+            >
+            <select name="horarioAu" id="horarioAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="puntualidadAu"
+              >¿Cómo consideras tu puntualidad y asistencia?*</label
+            >
+            <select name="puntualidadAu" id="puntualidadAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="identificarAu"
+              >¿Te identificas con los valores de la empresa?*</label
+            >
+            <select name="identificarAu" id="identificarAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="iniciativaAu">¿Cómo calificas tu iniciativa?*</label>
+            <select name="iniciativaAu" id="iniciativaAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="trabajoEquiAu">¿Fomentas el trabajo en equipo?*</label>
+            <select name="trabajoEquiAu" id="trabajoEquiAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="futuroAu">¿Puedo verme trabajando aquí en los próximos 5 años?*</label>
+            <select name="futuroAu" id="futuroAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="estrategiasAu">¿Entiendo claramente las estrategias para lograr los objetivos de la empresa?*</label>
+            <select name="estrategiasAu" id="estrategiasAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="equipoAu">¿Siento que todos pueden hacer equipo conmigo?*</label>
+            <select name="equipoAu" id="equipoAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="confianzaAu">¿Generas credibilidad y confianza frente al manejo de la información y en la ejecución de actividades?*</label>
+            <select name="confianzaAu" id="confianzaAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="efectivoAu">¿Demuestras efectividad ante la alta demanda de trabajo?*</label>
+            <select name="efectivoAu" id="efectivoAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="recursosAu">¿Utilizas los recursos de la mejor manera?*</label>
+            <select name="recursosAu" id="recursosAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+
+          <div class="cuestions">
+            <label for="ordenesAu">¿Te causa problema acatar ordenes?*</label>
+            <select name="ordenesAu" id="ordenesAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="capacidadAu">¿Te consideras con la capacidad de resolver cualquier problema que se te presente?*</label>
+            <select name="capacidadAu" id="capacidadAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+          <div class="cuestions">
+            <label for="potencialAu">¿Mi jefe reconoce mi potencial y aprovecha mis fortalezas?*</label>
+            <select name="potencialAu" id="potencialAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+
+          <div class="cuestions">
+            <label for="resultadosAu">¿Entregas resultados esperados de acuerdo con la programación previamente establecida?*</label>
+            <select name="resultadosAu" id="resultadosAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+
+          <div class="cuestions">
+            <label for="destrezaAu">¿Aplicas las destrezas y los conocimientos necesarios para el cumplimiento de las actividades y funciones de tu puesto?*</label>
+            <select name="destrezaAu" id="destrezaAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+
+          <div class="cuestions">
+            <label for="trabajoAu">¿Realizas tu trabajo de acuerdo con los requerimientos en términos de contenido, exactitud, presentación, calidad y atención?*</label>
+            <select name="trabajoAu" id="trabajoAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+
+          <div class="cuestions">
+            <label for="desempenoAu">¿Cómo calificas tu desempeño a nivel general?*</label>
+            <select name="desempenoAu" id="desempenoAu">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+                </select>
+          </div>
+
+
+          <div class="cuestions">
+            <input type="submit" class="boton-form-naranja" value="Enviar" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/controllers/autoevaluacionD.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

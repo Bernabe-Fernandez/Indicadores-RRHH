@@ -1,0 +1,113 @@
+main{
+    width: auto;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-encuesta{
+    margin-bottom: 1rem;
+    width: auto;
+}
+
+.head-encuesta h1{
+    width: 100%;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0;
+}
+
+.head-encuesta p{
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.head-encuesta .texto-encuesta{
+    text-align: center;
+}
+
+.body-encuesta{
+    margin-top: 5rem;
+    width: auto;
+}
+
+
+
+@media (min-width: 1024px) {
+    .body-encuesta{
+        margin: 0 20rem;
+        margin-top: 5rem;
+    }
+}
+
+.body-encuesta form{
+    width: 100%;
+}
+
+.body-encuesta{
+    width: auto;
+    padding: 1rem;
+    border: 1px solid var(--black-color);
+    border-radius: 1rem;
+}
+
+.formulario .cuestions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuestions label{
+    width: 90%;
+    text-align: justify;
+}
+
+.cuestions select{
+    width: 95%;
+}
+
+.cuestions input:not([type="submit"]){
+    width: 90%;
+}
+
+.cuestions .contenedorNumeros{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.contenedorNumeros label{
+    text-align: center;
+}
+
+.cuestions .boton-form-naranja{
+    margin-top: 1rem
+}
+
+.mensaje-encuesta h3{
+    font-size: 4rem;
+}
+
+.mensaje-encuesta p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mensaje-encuesta .contenedor-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.contenedor-img img{
+    width: 40rem;
+    height: 20rem;
+}

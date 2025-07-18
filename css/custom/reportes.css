@@ -1,0 +1,140 @@
+.contenedor-reporte{
+    width: 80%;
+    margin: 2rem 3rem 0rem 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--black-color);
+}
+
+.contenedor-reporte .form-filtro{
+    width: 90%;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    border-top: 1px solid var(--black-color);
+}
+
+.form-filtro .contenedor-input{
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contenedor-input .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: auto;
+}
+
+.input label{
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+}
+
+.input select{
+    font-size: 13px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid var(--black-color);
+    border-radius: 8px;
+}
+
+.form-filtro .contenedor-btn-filtro{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contenedor-btn-filtro button{
+    width: auto;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.contenedor-btn-filtro .btn-filtro{
+    border: 1px solid var(--link-color);
+    background-color: var(--link-color);
+}
+.contenedor-btn-filtro .btn-limpiar{
+    border: 1px solid var(--red);
+    background-color: var(--red);
+}
+
+.contenedor-btn-filtro button:hover{
+    border: 1px solid var(--black-color);
+}
+
+
+.contenedor-reporte .area-reportes{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.area-reportes .reporte{
+    width: 75%;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reporte label{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+}
+
+.reporte select{
+    width: 85%;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+}
+
+/*** botones del form ****/
+.acciones-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .acciones-form .boton-ver{
+    background-color: var(--green);
+    color: var(--black-color);
+  }
+  
+  .acciones-form .boton-dow{
+    background-color: var(--blue);
+    color: var(--white-color);
+  
+  }
+  
+  .acciones-form .boton-ver:hover,
+  .acciones-form .boton-dow:hover{
+    border: 1px solid var(--black-color);
+  }

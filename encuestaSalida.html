@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/custom/normalize.css" />
+    <link rel="stylesheet" href="css/custom/style.css" />
+    <link rel="stylesheet" href="css/custom/cuestionarios.css" />
+    <title>Encuesta de Salida</title>
+  </head>
+  <body>
+    <main>
+      <section id="mensajeForm" class="mensaje-encuesta" style="display: none">
+        <h3>¡Muchas Gracias!</h3>
+        <p>
+          Has contestado satisfactoriamente nuestro cuestionario, agradecemos tu
+          retroalimentación, seguiremos trabajando para establecer mejoras
+          continuas.
+        </p>
+        <div class="contenedor-img">
+          <img src="img/icono.webp" alt="mrg">
+        </div>
+      </section>
+      <section class="head-encuesta" id="head-encuesta">
+        <h1>Encuesta de Salida.</h1>
+        <p>De favor lee con atención y contesta todas las preguntas.</p>
+      </section>
+      <section class="body-encuesta" id="body-encuesta">
+        <form class="formulario" id="fomularioSalida">
+          <div class="cuestions">
+            <label for="colaborador"
+              >Selecciona tu nombre dentro de la lista*</label
+            >
+            <select name="colaborador" id="colaborador">
+              <option value="0" selected disabled>Selecciona una opción</option>
+            </select>
+          </div>
+          <div class="cuestions">
+            <label for="puestoC">Puesto*</label>
+            <input
+              type="text"
+              name="puestoC"
+              id="puestoC"
+              placeholder="Puesto"
+              disabled
+            />
+          </div>
+          <div class="cuestions">
+            <label for="areaC">Area*</label>
+            <input
+              type="text"
+              name="areaC"
+              id="areaC"
+              placeholder="Area"
+              disabled
+            />
+          </div>
+          <div class="cuestions">
+            <label for="ingresoC">Fecha de ingreso*</label>
+            <input type="date" name="ingresoC" id="ingresoC" disabled />
+          </div>
+          <div class="cuestions">
+            <label for="egresoC">Fecha de salida*</label>
+            <input type="date" name="egresoC" id="egresoC" />
+          </div>
+          <div class="cuestions">
+            <label for="motivoE">¿Cuál es el motivo de tu salida?*</label>
+            <select name="motivoE" id="motivoE">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="Mejor oferta de empleo">
+                Mejor oferta de empleo
+              </option>
+              <option value="Renuncia Voluntaria">Renuncia Voluntaria</option>
+              <option value="Recisión de contrato">Recisión de contrato</option>
+              <option value="Otro">Otro (Especifique)</option>
+            </select>
+          </div>
+          <div class="cuestions" id="Otro" style="display: none">
+            <label for="otroM">Especifique*</label>
+            <input type="text" name="otroM" id="otroM" />
+          </div>
+          <div class="cuestions">
+            <label for="relacionJ"
+              >¿Cómo consideras que fue la relación con tu jefe
+              inmediato?*</label
+            >
+            <select name="relacionJ" id="relacionJ">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="Buena">Buena</option>
+              <option value="Regular">Regular</option>
+              <option value="Indiferente">Indiferente</option>
+              <option value="Mala">Mala</option>
+            </select>
+          </div>
+          <div class="cuestions">
+            <label for="calificacionJ"
+              >Del 1 al 10 ¿Con cuánto calificas el trato de tu jefe hacia
+              tí?*</label
+            >
+            <div class="contenedorNumeros" id="contenedorNumeros"></div>
+          </div>
+          <div class="cuestions">
+            <label for="relacionC"
+              >¿Cómo consideras que fue la relación con tus compañeros de
+              trabajo?*</label
+            >
+            <select name="relacionC" id="relacionC">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="Buena">Buena</option>
+              <option value="Regular">Regular</option>              
+              <option value="Indiferente">Indiferente</option>
+              <option value="Mala">Mala</option>
+            </select>
+          </div>
+          <div class="cuestions">
+            <label for="gusto"
+              >¿Qué es lo que más te gustaba de la empresa?*</label
+            >
+            <input type="text" name="gusto" id="gusto" placeholder="Gusto" />
+          </div>
+          <div class="cuestions">
+            <label for="disgusto"
+              >¿Qué es lo que menos te gustaba de la empresa?*</label
+            >
+            <input
+              type="text"
+              name="disgusto"
+              id="disgusto"
+              placeholder="Disgusto"
+            />
+          </div>
+          <div class="cuestions">
+            <label for="mejora">¿En qué crees que podemos mejorar?*</label>
+            <input type="text" name="mejora" id="mejora" placeholder="Mejora" />
+          </div>
+          <div class="cuestions">
+            <label for="recomendacion"
+              >¿Recomendarías a alguien más para trabajar en Morgall?*</label
+            >
+            <select name="recomendacion" id="recomendacion">
+              <option value="0" selected disabled>Selecciona una opción</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+              <option value="Tal vez">Tal vez</option>
+            </select>
+          </div>
+          <div class="cuestions">
+            <label for="comentario"
+              >En caso de tener algún comentario favor de agregarlo.</label
+            >
+            <input
+              type="text"
+              name="comentario"
+              id="comentario"
+              placeholder="Comentario"
+            />
+          </div>
+
+          <div class="cuestions">
+            <input
+              type="submit"
+              class="boton-form-naranja"
+              value="Enviar"
+            />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/controllers/encuestaSalida.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
